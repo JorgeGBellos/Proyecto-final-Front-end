@@ -1,0 +1,406 @@
+:root{
+	--dark-blue:rgba(30, 48, 89, 0.8);
+	--light-black: rgba(0, 0, 0, 0.9);
+	--shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+	--hero-overlay:rgba(30, 48, 89, 0.4);
+	--primary-font:'Montserrat', sans-serif;
+	--secondary-font:'Montserrat Alternates', sans-serif;
+}
+
+*,
+*:before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body{
+	font-family: var(--primary-font);
+	color: white;
+	position: relative;
+	min-width: 425px;
+	min-height: 300px;
+}
+
+.header{
+  	height: 100vh;
+  	box-shadow: var(--shadow);
+}
+
+.hero-banner{
+	position: relative;
+	height: 100%;
+	background-image: url("img/herobanner.png");
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.navbar{
+	background: var(--dark-blue);
+	box-shadow: var(--shadow);
+	position: fixed;
+	width: 100%;
+	height: 65px;
+	left: 0px;
+	top: 0px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	z-index: 2;
+}
+
+.navbar .navbar-logo{
+	margin-left: 48px;
+	width: 129px;
+	height: 38px;
+}
+
+.navbar .navbar-list{
+	display: flex;
+	list-style-type: none;
+}
+.navbar .navbar-list .navbar-item a{
+	margin-right: 48px;
+	font-size: 16px;
+	line-height: 20px;
+	font-weight: bold;
+	text-decoration: none;
+	color: white;
+}
+
+.menu{
+	display: none;
+}
+
+.overlay{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color:var(--hero-overlay);
+}
+
+.hero-content{
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	z-index: 1;
+}
+.hero-content .hero-banner-text{
+	max-width: 800px;
+	text-align: center;
+}
+
+.hero-content .hero-banner-text h1{
+	font-family: var(--secondary-font);
+	font-weight: bold;
+	font-size: 80px;
+	margin-bottom: 1rem;
+}
+
+.hero-content .hero-banner-text > p{
+	font-weight: 300;
+	font-size: 24px;
+	margin-bottom: 32px;
+}
+.hero-content .hero-banner-text .button{
+	width: 208px;
+	height: 73px;
+	margin: 0 auto;
+ 	text-decoration: none;
+ 	color: white;
+ 	background: rgba(255, 255, 255, 0.08);
+ 	border: 2px solid #FFFFFF;
+ 	text-align: center;
+	border-radius: 50px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.hero-content .hero-banner-text .button p{
+	font-weight: normal;
+	font-size: 18px;
+}
+
+.about-us{
+	width: 100%;
+	height: 100vh;
+	background: var(--light-black);
+	text-align: center;
+	position: relative;
+	z-index: -2;
+}
+
+.about-us .about-us-content h4{
+	font-family: Montserrat;
+	font-size: 36px;
+	font-weight: 300;
+	padding-top: 6rem;
+}
+.about-us .about-us-content > p{
+	font-style: italic;
+	font-weight: 300;
+	font-size: 24px;
+	margin-top: 8px;
+}
+
+.about-us-content .line{
+	display: none;
+}
+
+.content{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	flex-direction: row;
+	flex-wrap: wrap-reverse;
+	margin-top: 5rem;
+}
+
+.content .about-us-img{
+	width: 14vw;
+	height: 20vw;
+	background: url(img/godzilla.png);
+	box-shadow: 0px 0px 40px rgba(255, 255, 255, 0.25);
+	border-radius: 10px;
+	background-position: center;
+	background-size: cover;
+}
+
+.content .about-us-text{
+	max-width: 500px;
+	max-height: 500px;
+	font-style: normal;
+	font-weight: 300;
+	font-size: 18px;		
+	text-align: justify;
+}
+
+.footer{
+	font-size: 12px;
+	width: 100%;
+	height: 65px;
+	position: absolute;
+	bottom:0;
+	left: 0;
+	background-color: var(--dark-blue);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.footer p{
+	max-width: 200px;
+	text-align: center;
+	line-height: 15px;
+	margin-top: 10px;
+}
+
+.footer .social-networks{
+	display: flex;
+	justify-content:center;
+	align-items: center;
+	list-style-type: none;
+	margin-bottom: 10px;
+}
+
+.footer .social-item{
+	margin: 0 8px;
+}
+.footer .social-item i{
+	width: 10px;
+	height: 10px;
+}
+
+
+@media(max-width: 920px){
+
+.navbar{
+	height: 42px;
+}
+
+.navbar .navbar-logo{	
+	width: 69px;
+	height: 20px;
+}
+
+.navbar .navbar-list .navbar-item a{
+	font-size: 8px;
+	line-height: 10px;
+}
+
+.hero-content .hero-banner-text{
+	max-width: 400px;
+}
+
+.hero-content .hero-banner-text h1{
+	font-size: 40px;
+	line-height: 49px;
+}
+
+.hero-content .hero-banner-text > p{
+	font-size: 12px;
+	line-height: 15px;
+	margin-bottom: 36px;
+}
+.hero-content .hero-banner-text .button{
+	width: 111px;
+	height: 39px;
+}
+
+.hero-content .hero-banner-text .button p{
+	font-size: 10px;
+}
+
+.about-us .about-us-content h4{
+	font-size: 18px;
+	line-height: 22px;
+	padding-top: 3rem;
+}
+.about-us .about-us-content > p{
+	font-style: italic;
+	font-weight: 300;
+	font-size: 16px;
+	line-height: 20px;
+	margin-top: 15px;	
+}
+.about-us-content .line{
+	display: block;
+	width: 192px;
+	height: 0px;
+	border: 1px solid white;
+}
+
+.line-1{
+	position: absolute;
+	top: 55px;
+	right: 70px;
+}
+
+.line-2{
+	position: absolute;
+	top: 55px;
+	left: 70px;
+}
+
+.content{
+	margin-top: 16px;
+}
+
+.content .about-us-img{
+	display: none;
+}
+
+.content .about-us-text{
+	font-size: 16px;
+	line-height: 20px;
+}
+
+.footer{
+	font-size: 8px;
+	height: 42px;
+}
+
+.footer p{
+	max-width: 132px;
+	line-height: 10px;
+	margin-top: 4px;
+}
+
+.footer .social-networks{
+	margin-bottom: 4px;
+}
+
+.footer .social-item{
+	margin: 0 9px;
+}
+
+}
+
+@media(max-width: 730px){
+
+.navbar{
+	background: transparent;
+	box-shadow: none;
+	height: 20px;
+	left: 16px;
+	top: 16px;
+}
+
+.navbar .navbar-logo{
+	margin:0;
+	width: 69px;
+	height: 20px;
+}
+
+.navbar .navbar-list{
+	display: none;
+}
+
+.menu{
+	display:block;
+	position: absolute;
+	right: 32px;
+	width: 32px;
+	height: auto;
+}
+
+.hero-content .hero-banner-text{
+	max-width: 400px;
+}
+
+.hero-content .hero-banner-text h1{
+	font-size: 32px;
+	margin-bottom: 67px;
+}
+
+.hero-content .hero-banner-text > p{
+	display: none;
+}
+.hero-content .hero-banner-text .button{
+	width: 111px;
+	height: 40px;
+}
+
+.hero-content .hero-banner-text .button p{
+	font-size: 10px;
+	line-height: 12px;
+}
+
+.about-us-content .line{
+	width: 20%;
+}
+
+.content .about-us-text{
+	margin-top: 14px;
+	margin-left: 70px;
+	margin-right: 70px;
+}
+
+.footer{
+	font-size: 6px;
+	height: 36px;
+}
+
+.footer p{
+	max-width: 100px;
+	line-height: 7px;
+}
+
+.footer .social-networks{
+	margin-bottom: 4px;
+}
+
+.footer .social-item{
+	margin: 0 4px;
+}
+
+}

@@ -1,0 +1,270 @@
+:root{
+	--blue: #265CA6;
+	--dark-blue:rgba(30, 48, 89, 0.8);
+	--light-black: rgba(0, 0, 0, 0.9);
+	--primary-font:'Montserrat', sans-serif;
+	--secondary-font:'Montserrat Alternates', sans-serif;
+}
+
+*,
+*:before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body{
+	font-family: var(--primary-font);
+	color: white;
+	position: relative;
+}
+
+.contact-us{
+	display: flex;
+	position: relative;
+	justify-content: center;
+	background: var(--light-black);
+	min-height: 1132px;
+	height: 100vh;
+	width: 100%;
+}
+
+.contact-us-content{
+	position: relative;
+	max-width: 584px;
+}
+
+.contact-us-header{
+	position: relative;
+	text-align: center;
+	margin-top: 144px;
+	margin-bottom: 64px;
+}
+
+.contact-us-header h1{
+	font-size: 64px;
+	margin-bottom: 24px;
+}
+
+.contact-us-header p{
+	font-size: 24px;
+}
+
+.contact-us-form{
+	position: relative;
+	margin-bottom: 63px;
+}
+
+.contact-us-form #name{
+	height: 40px;
+	width: 280px;
+	margin-right: 16px;
+	border-radius: 5px;
+	margin-bottom: 32px;
+	font-family: var(--primary-font);
+	font-size: 18px;
+}
+
+.contact-us-form #email{
+	height: 40px;
+	width: 280px;
+	border-radius: 5px;
+	font-family: var(--primary-font);
+	font-size: 18px;
+}
+
+.contact-us-form #subject{
+	height: 40px;
+	width: 584px;
+	border-radius: 5px;
+	font-family: var(--primary-font);
+	margin-bottom: 32px;
+	font-size: 18px;
+}
+
+.contact-us-form #message{
+	height: 216px;
+	width: 584px;
+	border-radius: 5px;
+	font-family: var(--primary-font);
+	margin-bottom: 40px;
+	font-size: 18px;
+}
+
+.contact-us-form .button{
+	width: 144px;
+	height: 56px;
+	margin:  auto;
+	font-size: 18px;
+ 	color: white;
+ 	background: var(--dark-blue);
+ 	border: 2px solid #FFFFFF;
+ 	text-align: center;
+	border-radius: 50px;
+	display: flex;
+	justify-content: center;
+	transition: background .2s ease-in-out;
+}
+
+.contact-us-form .button:hover{
+	background-color: var(--blue);
+}
+
+.contact-us-info{
+	font-size: 16px;
+	text-align: center;
+	font-family: var(--primary-font);
+	font-weight: bold;
+	margin-bottom: 144px;
+}
+
+.contact-us-info p{
+	margin-bottom: 16px;
+}
+
+@media(max-width: 920px){
+
+	.contact-us{
+		min-height: 946px;
+	}
+
+	.contact-us-content{
+		max-width: 448px;
+	}
+	
+	.contact-us-header{
+		margin-top: 122px;
+		margin-bottom: 80px;
+	}
+	
+	.contact-us-header h1{
+		font-size: 48px;
+		margin-bottom: 16px;
+	}
+	
+	.contact-us-header p{
+		font-size: 18px;
+	}
+	
+	.contact-us-form{
+		margin-bottom: 108px;
+	}
+	
+	.contact-us-form #name{
+		height: 32px;
+		width: 216px;
+		margin-right: 8px;
+		margin-bottom: 16px;
+		font-size: 12px;
+		border-radius: 5px;
+	}
+	
+	.contact-us-form #email{
+		height: 32px;
+		width: 216px;
+		font-size: 12px;
+	}
+	
+	.contact-us-form #subject{
+		height: 32px;
+		width: 448px;
+		margin-bottom: 16px;
+		font-size: 12px;
+	}
+	
+	.contact-us-form #message{
+		height: 160px;
+		width: 448px;
+		margin-bottom: 40px;
+		font-size: 12px;
+	}
+	
+	.contact-us-form .button{
+		width: 96px;
+		height: 36px;
+		font-size: 14px;
+	}
+	
+	.contact-us-info{
+		font-size: 12px;
+		margin-bottom: 108px;
+	}
+	
+	.contact-us-info p{
+		margin-bottom: 12px;
+	}
+}
+
+@media(max-width: 730px){
+
+	.contact-us{
+		min-height: 698px;
+	}
+
+	.contact-us-content{
+		max-width: 280px;
+	}
+	
+	.contact-us-header{
+		margin-top: 80px;
+		margin-bottom: 48px;
+	}
+	
+	.contact-us-header h1{
+		font-size: 32px;
+		margin-bottom: 12px;
+	}
+	
+	.contact-us-header p{
+		font-size: 12px;
+	}
+	
+	.contact-us-form{
+		margin-bottom: 72px;
+	}
+	
+	.contact-us-form #name{
+		height: 24px;
+		width: 280px;
+		margin-right: 0px;
+		margin-bottom: 12px;
+		font-size: 8px;
+	}
+	
+	.contact-us-form #email{
+		height: 24px;
+		width: 280px;
+		margin-bottom: 12px;
+		font-size: 8px;
+	}
+	
+	.contact-us-form #subject{
+		height: 24px;
+		width: 280px;
+		margin-bottom: 12px;
+		font-size: 8px;
+	}
+	
+	.contact-us-form #message{
+		height: 120px;
+		width: 280px;
+		margin-bottom: 24px;
+		font-size: 8px;
+	}
+	
+	.contact-us-form .button{
+		width: 72px;
+		height: 32px;
+		font-size: 10px;
+	}
+	
+	.contact-us-info{
+		font-size: 8px;
+		margin-bottom: 68px;
+	}
+	
+	.contact-us-info p{
+		margin-bottom: 8px;
+	}
+}
